@@ -185,6 +185,16 @@ npx --cache ./.skills-npm-cache --yes skills add yiwen-even/life-path-explorer -
 
 无需因此修改旧缓存的属主或读取任何凭据。
 
+### GitHub 下载出现 HTTP2 或超时错误
+
+如果错误发生在克隆仓库阶段，可以直接从 GitHub 官方压缩包安装同一份 Skill：
+
+```bash
+npx --yes skills add https://codeload.github.com/yiwen-even/life-path-explorer/tar.gz/refs/heads/main --skill life-path-explorer --agent codex --yes
+```
+
+这个方式已完成隔离安装，六个资源与源码逐文件一致。它通过 HTTPS 下载官方仓库压缩包，仍需要能访问 npm 和 GitHub；不需要输入 GitHub 密码或授予新的账号权限。
+
 ### 安装后助手没有识别 Skill
 
 先核对安装器的成功输出、目标项目和完整目录。如果仍未识别，可以明确要求助手读取该项目的 `.agents/skills/life-path-explorer/SKILL.md`，并按当前问题读取对应参考。读取成功之前，不把缺失的资源当作已加载。
