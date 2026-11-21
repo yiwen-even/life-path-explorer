@@ -1,0 +1,4 @@
+interface:
+  display_name: "life-path-explorer（个人优势与人生路径探索）"
+  short_description: "从真实经历梳理优势，比较人生路线，设计可执行的小实验并根据反馈复盘"
+  default_prompt: "请用 $life-path-explorer 根据我提供的经历和当前问题，帮我比较方向并确定一个能获得现实反馈的下一步。"
