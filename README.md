@@ -26,6 +26,8 @@ npx --yes skills add yiwen-even/life-path-explorer --skill life-path-explorer --
 
 本项目实际验证的是 Codex 的项目级安装，安装目录为 `.agents/skills/life-path-explorer/`。其他宿主的识别与执行效果尚未验证。
 
+遇到 GitHub 下载中断时，[使用指南](USAGE.md)提供了已验证的官方压缩包安装方式。
+
 ### 2. 在 Codex 中发送
 
 ```text
@@ -86,7 +88,7 @@ npx --yes skills add yiwen-even/life-path-explorer --skill life-path-explorer --
 | 结构回归 | CRLF 正常包通过；缺参考、私人路径和许可证不一致被正确拒绝 |
 | 构造行为场景 | 12 题按预写标准通过，无关键失败 |
 | 实际安装包执行 | 另 1 个构造案例完成，保留 90 分钟上限与未确认人选 |
-| 本地与 GitHub 隔离安装 | 6 个 Skill 资源与源码逐文件一致 |
+| 本地与 GitHub 隔离安装 | 仓库源与官方压缩包均已安装核对，6 个 Skill 资源与源码逐文件一致 |
 
 场景由未读实现的测试设计者准备，三位执行者各处理四题，没有读取判分标准；判分由实现者完成，不属于独立盲评，组内共享上下文。一个退休生活样本每条路线只列一个探索问题，完整练习应检查原版三个问题是否齐全。
 
