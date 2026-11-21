@@ -75,7 +75,7 @@ check("interface can invoke the actual skill", () => {
 check("package is text-only and contains no local paths or credentials", () => {
   const files = [
     ...skillFiles,
-    ...["README.md", "SOURCES.md", "LICENSE", ".gitignore"].map(name => path.join(root, name)),
+    ...["README.md", "USAGE.md", "SOURCES.md", "LICENSE", ".gitignore"].map(name => path.join(root, name)),
   ];
   for (const file of files) {
     const content = readText(file);
